@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">PandemicHelper</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="start_screen_label">Start Screen</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="start">Start</string>
+    <string name="previous">Previous</string>
+
+    <string name="app_title">Pandemic Helper</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+    <!--Setup Fragment Strings-->
+    <string name="setup_game_text_view">Game Settings</string>
+    <string name="epidemic_text_view">Epidemic Level : %1$d - %2$s</string>
+    <string name="epidemic_count_min">3</string>
+    <string name="epidemic_count_max">6</string>
+    <string name="play_button">Play</string>
+    <string name="player_name_text">Player %1$d Name:</string>
+    <string name="player_name_placeholder_text">Name goes here…</string>
+    <string name="player_count_spinner">How many Players?</string>
+    <string-array name="player_count_spinner">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string name="player_roles_switch">Assign Roles to Players?</string>
+
+    <!--Card Strings-->
+    <string name="player_cards">Player Cards</string>
+    <string name="player_discards">Player Discards</string>
+    <string name="infection_cards">Infection Cards</string>
+    <string name="infection_discards">Infection Discards</string>
+    <string name="card_name">%1$s</string>
+
+    <!--Image Content Descriptions-->
+    <string name="pandemic_image_description">Pandemic Image</string>
+    <string name="first_aid_image_description">First Aid Image</string>
+    <string name="player_card_virus_image">Virus Image</string>
+    <string name="infection_card_virus_image">Virus Image</string>
+</resources>

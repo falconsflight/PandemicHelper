@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/setup_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/game_settings_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/setup_game_text_view"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/settings_scroll_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/settings_scroll_view"
+        android:layout_width="372dp"
+        android:layout_height="600dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/colorPrimaryAccent"
+        android:fadingEdge="horizontal|vertical"
+        android:radius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/settings_layout_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/player_count_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_between_sections"
+                android:layout_marginBottom="@dimen/player_row_bottom_margin">
+
+                <TextView
+                    android:id="@+id/player_count_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/player_count_spinner"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/player_count_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:entries="@array/player_count_spinner" />
+            </LinearLayout>
+
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/player_1_row"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:layout_marginBottom="12dp"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:paddingLeft="10dp"-->
+            <!--                android:paddingRight="10dp">-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/player_name_text_view_1"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="@string/player_name_text"-->
+            <!--                    android:textSize="18sp" />-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/edit_player_name_1"-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:hint="@string/player_name_placeholder_text"-->
+            <!--                    android:importantForAutofill="no"-->
+            <!--                    android:inputType="textPersonName" />-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/player_2_row"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:layout_marginBottom="12dp"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:paddingLeft="10dp"-->
+            <!--                android:paddingRight="10dp">-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/player_name_text_view_2"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="@string/player_name_text"-->
+            <!--                    android:textSize="18sp" />-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/editTextTextPersonName2"-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:ems="10"-->
+            <!--                    android:hint="@string/player_name_placeholder_text"-->
+            <!--                    android:inputType="textPersonName"-->
+            <!--                    android:importantForAutofill="no" />-->
+            <!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/roles_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin_between_sections"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <Switch
+                    android:id="@+id/player_roles_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/player_roles_switch"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/epidemic_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/epidemic_count_seek_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:max="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/epidemic_text_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin_between_sections"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/epidemic_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="start"
+                    android:text="@string/epidemic_text_view"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/play_button_row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/play_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/play_button" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/StartScreen">
+
+    <fragment
+        android:id="@+id/StartScreen"
+        android:name="falcon.jacob.pandemichelper.StartFragment"
+        android:label="@string/start_screen_label"
+        tools:layout="@layout/fragment_start">
+
+        <action
+            android:id="@+id/action_StartFragment_to_SetupFragment"
+            app:destination="@id/SetupGame"
+            app:enterAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/SetupGame"
+        android:name="falcon.jacob.pandemichelper.SetupGameFragment"
+        android:label="setup_game_fragment"
+        tools:layout="@layout/fragment_setup">
+        <action
+            android:id="@+id/action_SetupGame_to_gameActivity"
+            app:destination="@id/gameActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/gameActivity"
+        android:name="falcon.jacob.pandemichelper.GameActivity"
+        android:label="GameActivity"
+        tools:layout="@layout/activity_game"/>
+</navigation>

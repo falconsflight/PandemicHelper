@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#AE2343</color>
+    <color name="colorAccent">#03DAC5</color>//#408B06DD
+    <color name="colorPrimaryAccent">#5C5A5A</color>
+    <color name="colorPrimaryText">#FFFFFF</color>
+    <color name="colorEpidemicCard">#456E18</color>
+
+    <!--Virus Colors-->
+    <color name="colorBlueVirusDark">#093D8A</color>
+    <color name="colorBlueVirusLight">#0A66EF</color>
+    <color name="colorBlackVirusDark">#000000</color>
+    <color name="colorBlackVirusLight">#3A3A3A</color>
+    <color name="colorYellowVirusDark">#DFC204</color>
+    <color name="colorYellowVirusLight">#F1DE66</color>
+    <color name="colorRedVirusDark">#FF8E0E0E</color>
+    <color name="colorRedVirusLight">#FFD61F1F</color>
+</resources>
